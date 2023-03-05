@@ -1,0 +1,4 @@
+﻿3 changes to the technical or organisational aspects of this project if I were completing it again.
+* normalize the table ,It will determine what kind of database system is needed.
+* Use online database
+* Make the data more flexible, to make updation and changes

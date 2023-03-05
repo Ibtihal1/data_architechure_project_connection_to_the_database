@@ -1,0 +1,102 @@
+﻿1. Data description
+* The name of the dataset
+               Boston crime
+
+
+* brief discussion of the data
+The dataset containing records of  crime incident of  Boston, New England from  2015-2018 ,and  has a reduced number of fields dedicated to recording the form of incident, as well as when and where it happened. 
+the content
+
+
+This dataset has 327820 rows and 17 columns.
+* INCIDENT_NUMBER: crime incident number
+* OFFENSE CODE:  code of crime type
+* OFFENSECODEGROUP: type of crime occur
+* OFFENSE_DESCRIPTION: description of crime
+* DISTRICT: district number where crime occurred
+* REPORTING_AREA: area number where crime occur
+* SHOOTING: contain whether shooting occurred  at crime area
+* OCCURRED_ON_DATE: date and time when crime occurred
+* YEAR: Year of the crime occurrence
+* MONTH: month of crime occurrence
+* DAYOFWEEK: dayofweek for the crime occurrence
+* HOUR: hour of the crime occurrence
+* UCR_PART:crime  occurred comes under which category of crime
+* STREET:street address where crime occurred
+* LATITUDE:location latitude
+* LONGITUDE:location longitude
+* LOCATION:location of crime(latitude and longitude)
+Data downloaded from kaggle
+Data download link- https://www.kaggle.com/ankkur13/boston-crime-data/download
+
+
+
+
+
+
+
+
+
+
+* Types of data they contain
+                             Table "public.boston_crime"
+       Column        |            Type             | Collation | Nullable | Default 
+---------------------+-----------------------------+-----------+----------+---------
+ incident_number     | character varying(100)      |           | not null | 
+ offense_code        | integer                     |           | not null | 
+ offense_code_group  | character varying(255)      |           | not null | 
+ offense_description | character varying(255)      |           | not null | 
+ district            | character varying(255)      |           | not null | 
+ reporting_area      | integer                     |           | not null | 
+ shooting            | character varying(2)        |           |          | 
+ occurred_on_date    | timestamp without time zone |           |          | 
+ year                | integer                     |           | not null | 
+ month               | integer                     |           | not null | 
+ day_of_week         | character varying(255)      |           |          | 
+ hour                | integer                     |           | not null | 
+ ucr_part            | character varying(255)      |           |          | 
+ street              | character varying(255)      |           |          | 
+ lat                 | numeric                     |           |          | 
+ long                | numeric                     |           |          | 
+ location            | character varying(255)      |           | not null | 
+
+
+
+
+
+
+
+
+
+
+
+* Queries/Analyses  plan on performing on that data.
+1)FIRST ANALYSIS
+Analyse when more crime incident were occurred in boston
+1. Total no of daily crime(daily change in crime)
+2. Total no of monthly  crime(monthly change in crime)
+3. Total no of  crime in each year
+4. Crime count for week_days
+5. Crime count by crime category for each year
+6. Crime count by district for each year
+2)SECOND ANALYSIS
+Analyse where and which crime incident were more occurred in boston
+1. Count total no of crime by district
+2. Count total no of crime by area
+3. Count total no of crime by street
+4. Crime count by crime category in each district of boston
+5. Crime count by crime category for each  area in boston
+6. Crime count by crime category for each  street  in boston
+
+
+
+
+* variables of interest
+* INCIDENT_NUMBER
+* DISTRICT
+* REPORTING_AREA
+* OCCURRED_ON_DATE
+* YEAR
+* MONTH
+* DAYOFWEEK
+* STREET
